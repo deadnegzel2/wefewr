@@ -1,0 +1,428 @@
+-- Gui to Lua
+-- Version: 3.2
+
+-- Instances:
+
+local ScreenGui = Instance.new("ScreenGui")
+local ifre = Instance.new("Frame")
+local ifre_yukar = Instance.new("Frame")
+local ifre_hub_ad = Instance.new("TextLabel")
+local ly = Instance.new("TextBox")
+local lb = Instance.new("TextButton")
+local Hub = Instance.new("Frame")
+local ImageLabel = Instance.new("ImageLabel")
+local Frame = Instance.new("Frame")
+local Frame_2 = Instance.new("Frame")
+local TAIMA_yaz = Instance.new("TextLabel")
+local Frame_3 = Instance.new("Frame")
+local home_buton = Instance.new("ImageButton")
+local Home_button_yazs = Instance.new("TextLabel")
+local scripts_buton = Instance.new("ImageButton")
+local scripts_button_yazs = Instance.new("TextLabel")
+local Hubs_buton = Instance.new("ImageButton")
+local Hubs_button_yazs = Instance.new("TextLabel")
+local Home_sayfas = Instance.new("Frame")
+local home_sayfas_yaz = Instance.new("TextLabel")
+local home_sayfas_yaz1 = Instance.new("TextLabel")
+local home_sayfas_yaz2 = Instance.new("TextLabel")
+local Scripts_sayfas = Instance.new("Frame")
+local Scripts_sayfas1 = Instance.new("ScrollingFrame")
+local Fe_Head_Dancer = Instance.new("TextButton")
+local FE_CAR = Instance.new("TextButton")
+local DeadGUI = Instance.new("TextButton")
+local FE_Monster_Jacket = Instance.new("TextButton")
+local FE_Model_Grabber = Instance.new("TextButton")
+local FE_Lag_Switch = Instance.new("TextButton")
+local Hubs_sayfas = Instance.new("Frame")
+local Hubs_sayfas1 = Instance.new("ScrollingFrame")
+local syntax = Instance.new("TextButton")
+local Sniff_hub = Instance.new("TextButton")
+
+--Properties:
+
+ScreenGui.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+ScreenGui.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+
+ifre.Name = "şifre"
+ifre.Parent = ScreenGui
+ifre.BackgroundColor3 = Color3.fromRGB(241, 14, 238)
+ifre.BorderSizePixel = 4
+ifre.Position = UDim2.new(0.234600261, 0, 0.256461233, 0)
+ifre.Size = UDim2.new(0, 404, 0, 244)
+ifre.Visible = true
+
+ifre_yukar.Name = "şifre_yukarı"
+ifre_yukar.Parent = ifre
+ifre_yukar.BackgroundColor3 = Color3.fromRGB(193, 14, 190)
+ifre_yukar.BorderSizePixel = 4
+ifre_yukar.Size = UDim2.new(0, 404, 0, 46)
+
+ifre_hub_ad.Name = "şifre_hub_adı"
+ifre_hub_ad.Parent = ifre_yukar
+ifre_hub_ad.BackgroundColor3 = Color3.fromRGB(193, 14, 190)
+ifre_hub_ad.Size = UDim2.new(0, 404, 0, 46)
+ifre_hub_ad.Font = Enum.Font.SourceSans
+ifre_hub_ad.Text = "DEAD HUB"
+ifre_hub_ad.TextColor3 = Color3.fromRGB(0, 0, 0)
+ifre_hub_ad.TextScaled = true
+ifre_hub_ad.TextSize = 14.000
+ifre_hub_ad.TextWrapped = true
+
+ly.Name = "ly"
+ly.Parent = ifre
+ly.BackgroundColor3 = Color3.fromRGB(89, 89, 89)
+ly.BorderColor3 = Color3.fromRGB(255, 255, 255)
+ly.Position = UDim2.new(0.232673258, 0, 0.290983617, 0)
+ly.Size = UDim2.new(0, 200, 0, 50)
+ly.Font = Enum.Font.SourceSans
+ly.Text = ""
+ly.TextColor3 = Color3.fromRGB(255, 255, 255)
+ly.TextSize = 14.000
+
+lb.Name = "lb"
+lb.Parent = ifre
+lb.BackgroundColor3 = Color3.fromRGB(37, 255, 26)
+lb.Position = UDim2.new(0.289603978, 0, 0.655737698, 0)
+lb.Size = UDim2.new(0, 153, 0, 31)
+lb.Font = Enum.Font.SourceSans
+lb.Text = "Load"
+lb.TextColor3 = Color3.fromRGB(0, 0, 0)
+lb.TextSize = 14.000
+lb.MouseButton1Down:connect(function()
+	if ly.Text == "Deadhubbesthub" then
+		Hub.Visible =true
+	end
+end)
+
+Hub.Name = "Hub"
+Hub.Parent = ScreenGui
+Hub.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Hub.BorderSizePixel = 4
+Hub.Position = UDim2.new(0.0498034097, 0, 0.0576540716, 0)
+Hub.Size = UDim2.new(0, 644, 0, 403)
+Hub.Visible = false
+
+ImageLabel.Parent = Hub
+ImageLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ImageLabel.Position = UDim2.new(-0.00143883005, 0, -0.00233339518, 0)
+ImageLabel.Size = UDim2.new(0, 644, 0, 403)
+ImageLabel.Image = "rbxassetid://9101094775"
+
+Frame.Parent = ImageLabel
+Frame.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+Frame.Position = UDim2.new(0.164596274, 0, 0, 0)
+Frame.Size = UDim2.new(0, 2, 0, 403)
+
+Frame_2.Parent = ImageLabel
+Frame_2.BackgroundColor3 = Color3.fromRGB(209, 255, 3)
+Frame_2.Size = UDim2.new(0, 644, 0, 46)
+
+TAIMA_yaz.Name = "TAŞIMA_yazı"
+TAIMA_yaz.Parent = Frame_2
+TAIMA_yaz.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TAIMA_yaz.BackgroundTransparency = 1.000
+TAIMA_yaz.Position = UDim2.new(0, 0, 0.0204424653, 0)
+TAIMA_yaz.Size = UDim2.new(0, 644, 0, 45)
+TAIMA_yaz.Font = Enum.Font.SourceSans
+TAIMA_yaz.Text = "DEAD HUB"
+TAIMA_yaz.TextColor3 = Color3.fromRGB(0, 0, 0)
+TAIMA_yaz.TextScaled = true
+TAIMA_yaz.TextSize = 14.000
+TAIMA_yaz.TextWrapped = true
+TAIMA_yaz.Draggable = true
+
+Frame_3.Parent = ImageLabel
+Frame_3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Frame_3.Position = UDim2.new(0, 0, 0.114143923, 0)
+Frame_3.Size = UDim2.new(0, 106, 0, 357)
+
+home_buton.Name = "home_buton"
+home_buton.Parent = Frame_3
+home_buton.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+home_buton.BackgroundTransparency = 1.000
+home_buton.Position = UDim2.new(-0.0105147809, 0, 0.05901815, 0)
+home_buton.Size = UDim2.new(0, 107, 0, 35)
+home_buton.Image = "rbxassetid://9101115266"
+home_buton.MouseButton1Down:connect(function()
+	Home_sayfas.Visible = true
+	Scripts_sayfas.Visible = false
+	Hubs_sayfas.Visible = false
+end)
+
+Home_button_yazs.Name = "Home_button_yazısı"
+Home_button_yazs.Parent = home_buton
+Home_button_yazs.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Home_button_yazs.BackgroundTransparency = 1.000
+Home_button_yazs.Position = UDim2.new(0.0747663528, 0, 0, 0)
+Home_button_yazs.Size = UDim2.new(0, 88, 0, 34)
+Home_button_yazs.Font = Enum.Font.SourceSans
+Home_button_yazs.Text = "Home"
+Home_button_yazs.TextColor3 = Color3.fromRGB(0, 0, 0)
+Home_button_yazs.TextScaled = true
+Home_button_yazs.TextSize = 14.000
+Home_button_yazs.TextWrapped = true
+Home_button_yazs.MouseButton1Down:connect(function()
+	Home_sayfas.Visible = true
+	Scripts_sayfas.Visible = false
+	Hubs_sayfas.Visible = false
+end)
+
+scripts_buton.Name = "scripts_buton"
+scripts_buton.Parent = Frame_3
+scripts_buton.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+scripts_buton.BackgroundTransparency = 1.000
+scripts_buton.Position = UDim2.new(0.00874155853, 0, 0.20747751, 0)
+scripts_buton.Size = UDim2.new(0, 101, 0, 35)
+scripts_buton.Image = "rbxassetid://9101115266"
+scripts_buton.MouseButton1Down:connect(function()
+	Home_sayfas.Visible = false
+	Scripts_sayfas.Visible = true
+	Hubs_sayfas.Visible = false
+end)
+
+scripts_button_yazs.Name = "scripts_button_yazısı"
+scripts_button_yazs.Parent = scripts_buton
+scripts_button_yazs.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+scripts_button_yazs.BackgroundTransparency = 1.000
+scripts_button_yazs.Position = UDim2.new(0.0849106684, 0, 0.0857142881, 0)
+scripts_button_yazs.Size = UDim2.new(0, 83, 0, 28)
+scripts_button_yazs.Font = Enum.Font.SourceSans
+scripts_button_yazs.Text = "Scripts"
+scripts_button_yazs.TextColor3 = Color3.fromRGB(0, 0, 0)
+scripts_button_yazs.TextScaled = true
+scripts_button_yazs.TextSize = 14.000
+scripts_button_yazs.TextWrapped = true
+scripts_button_yazs.MouseButton1Down:connect(function()
+	Home_sayfas.Visible = false
+	Scripts_sayfas.Visible = true
+	Hubs_sayfas.Visible = false
+end)
+
+Hubs_buton.Name = "Hubs_buton"
+Hubs_buton.Parent = Frame_3
+Hubs_buton.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Hubs_buton.BackgroundTransparency = 1.000
+Hubs_buton.Position = UDim2.new(0.00874155853, 0, 0.353135765, 0)
+Hubs_buton.Size = UDim2.new(0, 102, 0, 35)
+Hubs_buton.Image = "rbxassetid://9101115266"
+Hubs_buton.MouseButton1Down:connect(function()
+	Home_sayfas.Visible = false
+	Scripts_sayfas.Visible = false
+	Hubs_sayfas.Visible = true
+end)
+
+
+Hubs_button_yazs.Name = "Hubs_button_yazısı"
+Hubs_button_yazs.Parent = Hubs_buton
+Hubs_button_yazs.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Hubs_button_yazs.BackgroundTransparency = 1.000
+Hubs_button_yazs.Position = UDim2.new(0.084902823, 0, 0.0857142881, 0)
+Hubs_button_yazs.Size = UDim2.new(0, 84, 0, 28)
+Hubs_button_yazs.Font = Enum.Font.SourceSans
+Hubs_button_yazs.Text = "Hubs"
+Hubs_button_yazs.TextColor3 = Color3.fromRGB(0, 0, 0)
+Hubs_button_yazs.TextScaled = true
+Hubs_button_yazs.TextSize = 14.000
+Hubs_button_yazs.TextWrapped = true
+Hubs_button_yazs.MouseButton1Down:connect(function()
+	Home_sayfas.Visible = false
+	Scripts_sayfas.Visible = false
+	Hubs_sayfas.Visible = true
+end)
+
+Home_sayfas.Name = "Home_sayfası"
+Home_sayfas.Parent = ImageLabel
+Home_sayfas.BackgroundColor3 = Color3.fromRGB(255, 0, 0)
+Home_sayfas.BorderSizePixel = 0
+Home_sayfas.Position = UDim2.new(0.178300753, 0, 0.135233268, 0)
+Home_sayfas.Size = UDim2.new(0, 521, 0, 341)
+
+home_sayfas_yaz.Name = "home_sayfası_yazı"
+home_sayfas_yaz.Parent = Home_sayfas
+home_sayfas_yaz.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+home_sayfas_yaz.Position = UDim2.new(0.015355086, 0, 0.0146627566, 0)
+home_sayfas_yaz.Size = UDim2.new(0, 505, 0, 51)
+home_sayfas_yaz.Font = Enum.Font.SourceSans
+home_sayfas_yaz.Text = "Welcome The Dead HUB."
+home_sayfas_yaz.TextColor3 = Color3.fromRGB(0, 0, 0)
+home_sayfas_yaz.TextScaled = true
+home_sayfas_yaz.TextSize = 14.000
+home_sayfas_yaz.TextWrapped = true
+home_sayfas_yaz.TextXAlignment = Enum.TextXAlignment.Left
+home_sayfas_yaz.TextYAlignment = Enum.TextYAlignment.Top
+
+home_sayfas_yaz1.Name = "home_sayfası_yazı1"
+home_sayfas_yaz1.Parent = Home_sayfas
+home_sayfas_yaz1.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+home_sayfas_yaz1.Position = UDim2.new(0.015355086, 0, 0.173020527, 0)
+home_sayfas_yaz1.Size = UDim2.new(0, 505, 0, 76)
+home_sayfas_yaz1.Font = Enum.Font.SourceSans
+home_sayfas_yaz1.Text = "Thanks For using Hub."
+home_sayfas_yaz1.TextColor3 = Color3.fromRGB(0, 0, 0)
+home_sayfas_yaz1.TextScaled = true
+home_sayfas_yaz1.TextSize = 14.000
+home_sayfas_yaz1.TextWrapped = true
+home_sayfas_yaz1.TextXAlignment = Enum.TextXAlignment.Left
+home_sayfas_yaz1.TextYAlignment = Enum.TextYAlignment.Top
+
+home_sayfas_yaz2.Name = "home_sayfası_yazı2"
+home_sayfas_yaz2.Parent = Home_sayfas
+home_sayfas_yaz2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+home_sayfas_yaz2.Position = UDim2.new(0.211132437, 0, 0.709677398, 0)
+home_sayfas_yaz2.Size = UDim2.new(0, 300, 0, 74)
+home_sayfas_yaz2.Font = Enum.Font.SourceSans
+home_sayfas_yaz2.Text = "Enjoy.      :D"
+home_sayfas_yaz2.TextColor3 = Color3.fromRGB(0, 0, 0)
+home_sayfas_yaz2.TextScaled = true
+home_sayfas_yaz2.TextSize = 14.000
+home_sayfas_yaz2.TextWrapped = true
+home_sayfas_yaz2.TextXAlignment = Enum.TextXAlignment.Left
+home_sayfas_yaz2.TextYAlignment = Enum.TextYAlignment.Top
+
+Scripts_sayfas.Name = "Scripts_sayfası"
+Scripts_sayfas.Parent = ImageLabel
+Scripts_sayfas.BackgroundColor3 = Color3.fromRGB(255, 0, 0)
+Scripts_sayfas.BorderSizePixel = 0
+Scripts_sayfas.Position = UDim2.new(0.178300753, 0, 0.135233268, 0)
+Scripts_sayfas.Size = UDim2.new(0, 519, 0, 340)
+Scripts_sayfas.Visible = false
+
+Scripts_sayfas1.Name = "Scripts_sayfası1"
+Scripts_sayfas1.Parent = Scripts_sayfas
+Scripts_sayfas1.Active = true
+Scripts_sayfas1.BackgroundColor3 = Color3.fromRGB(255, 0, 4)
+Scripts_sayfas1.Size = UDim2.new(0, 521, 0, 341)
+
+Fe_Head_Dancer.Name = "Fe_Head_Dancer"
+Fe_Head_Dancer.Parent = Scripts_sayfas1
+Fe_Head_Dancer.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Fe_Head_Dancer.Position = UDim2.new(0.0268714, 0, 0.0102639291, 0)
+Fe_Head_Dancer.Size = UDim2.new(0, 227, 0, 52)
+Fe_Head_Dancer.Font = Enum.Font.SourceSans
+Fe_Head_Dancer.Text = "[FE]Head Dancer(R6)"
+Fe_Head_Dancer.TextColor3 = Color3.fromRGB(0, 0, 0)
+Fe_Head_Dancer.TextScaled = true
+Fe_Head_Dancer.TextSize = 14.000
+Fe_Head_Dancer.TextWrapped = true
+Fe_Head_Dancer.MouseButton1Down:connect(function()
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/deadnegzel2/wefewr/main/1.txt", true))()
+end)
+
+FE_CAR.Name = "FE_CAR"
+FE_CAR.Parent = Scripts_sayfas1
+FE_CAR.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+FE_CAR.Position = UDim2.new(0.513301551, 0, 0.0102639291, 0)
+FE_CAR.Size = UDim2.new(0, 227, 0, 52)
+FE_CAR.Font = Enum.Font.SourceSans
+FE_CAR.Text = "[FE]Car(R6)"
+FE_CAR.TextColor3 = Color3.fromRGB(0, 0, 0)
+FE_CAR.TextScaled = true
+FE_CAR.TextSize = 14.000
+FE_CAR.TextWrapped = true
+FE_CAR.MouseButton1Down:connect(function()
+	loadstring(game:HttpGet('https://raw.githubusercontent.com/MonkoTubeYT/carscript/master/!carscript.lua',true))()
+end)
+
+DeadGUI.Name = "Dead GUI"
+DeadGUI.Parent = Scripts_sayfas1
+DeadGUI.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+DeadGUI.Position = UDim2.new(0.0268714, 0, 0.115835778, 0)
+DeadGUI.Size = UDim2.new(0, 227, 0, 52)
+DeadGUI.Font = Enum.Font.SourceSans
+DeadGUI.Text = "Dead GUI"
+DeadGUI.TextColor3 = Color3.fromRGB(0, 0, 0)
+DeadGUI.TextScaled = true
+DeadGUI.TextSize = 14.000
+DeadGUI.TextWrapped = true
+DeadGUI.MouseButton1Down:connect(function()
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/deadnegzel2/Roblox-DeadGUI/main/Dead%20GUI.txt", true))()
+end)
+
+FE_Monster_Jacket.Name = "FE_Monster_Jacket"
+FE_Monster_Jacket.Parent = Scripts_sayfas1
+FE_Monster_Jacket.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+FE_Monster_Jacket.Position = UDim2.new(0.512476027, 0, 0.115835778, 0)
+FE_Monster_Jacket.Size = UDim2.new(0, 227, 0, 52)
+FE_Monster_Jacket.Font = Enum.Font.SourceSans
+FE_Monster_Jacket.Text = "[FE] MONSTER JACKET(R15)"
+FE_Monster_Jacket.TextColor3 = Color3.fromRGB(0, 0, 0)
+FE_Monster_Jacket.TextScaled = true
+FE_Monster_Jacket.TextSize = 14.000
+FE_Monster_Jacket.TextWrapped = true
+FE_Monster_Jacket.MouseButton1Down:connect(function()
+	loadstring(game:HttpGet('https://raw.githubusercontent.com/ant-7802/--/main/get.real'))()
+end)
+
+FE_Model_Grabber.Name = "FE_Model_Grabber"
+FE_Model_Grabber.Parent = Scripts_sayfas1
+FE_Model_Grabber.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+FE_Model_Grabber.Position = UDim2.new(0.0268714018, 0, 0.234604105, 0)
+FE_Model_Grabber.Size = UDim2.new(0, 227, 0, 52)
+FE_Model_Grabber.Font = Enum.Font.SourceSans
+FE_Model_Grabber.Text = "[Fe] Model Grabber"
+FE_Model_Grabber.TextColor3 = Color3.fromRGB(0, 0, 0)
+FE_Model_Grabber.TextScaled = true
+FE_Model_Grabber.TextSize = 14.000
+FE_Model_Grabber.TextWrapped = true
+FE_Model_Grabber.MouseButton1Down:connect(function()
+	loadstring(game:HttpGet(("https://pastebin.com/raw/Mj0mFvHX"),true))()
+end)
+
+FE_Lag_Switch.Name = "FE_Lag_Switch"
+FE_Lag_Switch.Parent = Scripts_sayfas1
+FE_Lag_Switch.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+FE_Lag_Switch.Position = UDim2.new(0.512476027, 0, 0.234604105, 0)
+FE_Lag_Switch.Size = UDim2.new(0, 227, 0, 52)
+FE_Lag_Switch.Font = Enum.Font.SourceSans
+FE_Lag_Switch.Text = "[Fe] Lag Switch(press x)"
+FE_Lag_Switch.TextColor3 = Color3.fromRGB(0, 0, 0)
+FE_Lag_Switch.TextScaled = true
+FE_Lag_Switch.TextSize = 14.000
+FE_Lag_Switch.TextWrapped = true
+FE_Lag_Switch.MouseButton1Down:connect(function()
+	loadstring(game:HttpGet("https://paste.gg/p/anonymous/d3492bd620bd4c46b54680ac80b0fa0d/files/161ddd9c992c4ceba3c298458d45188a/raw", true))()
+end)
+
+Hubs_sayfas.Name = "Hubs_sayfası"
+Hubs_sayfas.Parent = ImageLabel
+Hubs_sayfas.BackgroundColor3 = Color3.fromRGB(255, 0, 0)
+Hubs_sayfas.BorderSizePixel = 0
+Hubs_sayfas.Position = UDim2.new(0.178300753, 0, 0.135233268, 0)
+Hubs_sayfas.Size = UDim2.new(0, 521, 0, 341)
+Hubs_sayfas.Visible = false
+
+Hubs_sayfas1.Name = "Hubs_sayfası1"
+Hubs_sayfas1.Parent = Hubs_sayfas
+Hubs_sayfas1.Active = true
+Hubs_sayfas1.BackgroundColor3 = Color3.fromRGB(255, 0, 4)
+Hubs_sayfas1.Size = UDim2.new(0, 521, 0, 341)
+
+syntax.Name = "syntax"
+syntax.Parent = Hubs_sayfas1
+syntax.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+syntax.Position = UDim2.new(0.0268714, 0, 0.0102639291, 0)
+syntax.Size = UDim2.new(0, 227, 0, 52)
+syntax.Font = Enum.Font.SourceSans
+syntax.Text = "Syntax V2 (Code:Syntaxbesthub)"
+syntax.TextColor3 = Color3.fromRGB(0, 0, 0)
+syntax.TextScaled = true
+syntax.TextSize = 14.000
+syntax.TextWrapped = true
+syntax.MouseButton1Down:connect(function()
+	loadstring(game:HttpGet(('https://raw.githubusercontent.com/Vallater/SyntaxV2/b7a88a7b84174e3c2220c7a8ca477e40699ddd2c/Syntaxontop'),true))()
+end)
+
+Sniff_hub.Name = "Sniff_hub"
+Sniff_hub.Parent = Hubs_sayfas1
+Sniff_hub.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Sniff_hub.Position = UDim2.new(0.513301551, 0, 0.0102639291, 0)
+Sniff_hub.Size = UDim2.new(0, 227, 0, 52)
+Sniff_hub.Font = Enum.Font.SourceSans
+Sniff_hub.Text = "Sniff hub"
+Sniff_hub.TextColor3 = Color3.fromRGB(0, 0, 0)
+Sniff_hub.TextScaled = true
+Sniff_hub.TextSize = 14.000
+Sniff_hub.TextWrapped = true
+Sniff_hub.MouseButton1Down:connect(function()
+	loadstring(game:HttpGet('https://raw.githubusercontent.com/2dgeneralspam1/Sniff-Hub/main/Sniff%20Hub'))()
+end)
